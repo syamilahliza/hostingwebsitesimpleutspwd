@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitas Indraprasta PGRI (UNINDRA)</title>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 120px;
+            display: block;
+            margin: 20px auto 10px auto;
+        }
+
+        h1 {
+            color: blue;
+            font-size: 24px;
+            text-align: center;
+            margin: 0;
+        }
+
+        h2 {
+            color: red;
+            font-size: 18px;
+            text-align: center;
+            margin: 5px 0 10px 0;
+            position: relative;
+            animation: jalan 6s linear infinite alternate;
+        }
+
+        @keyframes jalan {
+            0% { left: -200px; }
+            50% { left: 0; }
+            100% { left: 200px; }
+        }
+
+        hr {
+            border: none;
+            height: 5px;
+            background-color: black;
+            margin: 20px 0;
+        }
+
+        table {
+            margin: 0 auto;
+            border: 2px solid black;
+            border-collapse: separate;
+            border-spacing: 3px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        th {
+            width: 100px;
+        }
+
+        input {
+            width: 250px;
+            padding: 4px;
+            font-family: "Times New Roman", serif;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            background-color: yellow; 
+        }
+
+        .daftar {
+            text-align: left;
+            margin-left: 120px;
+            margin-top: 25px;
+        }
+
+        .daftar h3 {
+            margin-bottom: 5px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 5px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: putih;
+            border: 1px solid black;
+        }
+
+        button:hover {
+            background-color: #fff176; 
+        }
+    </style>
+</head>
+<body>
+
+    <img src="asset/logo_unindra_new.png" alt="LOGO UNINDRA">
+
+    <h1>UNIVERSITAS INDRAPRASTA PGRI (UNINDRA)</h1>
+    <h2>Jl. Nangka No.58 Tanjung Barat - JakSel</h2>
+
+    <hr size="5">
+
+    <form>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <td>:</td>
+                <td><input type="text" name="nama" placeholder="Nama Anda masing-masing"></td>
+            </tr>
+            <tr>
+                <th>NPM</th>
+                <td>:</td>
+                <td><input type="text" name="npm" placeholder="Nama Anda masing-masing"></td>
+            </tr>
+        </table>
+
+        <div class="daftar">
+            <h3>FTIK :</h3>
+            <ol type="A">
+                <li>Informatika</li>
+                <li>Teknik Arsitektur</li>
+                <li>Teknik Industri</li>
+            </ol>
+
+            <h3>MIPA :</h3>
+            <ol type="I">
+                <li>Matematika</li>
+                <li>Fisika</li>
+                <li>Biologi</li>
+            </ol>
+        </div>
+
+        <button type="submit">SIMPAN</button>
+    </form>
+
+</body>
+</html>
